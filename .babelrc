@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/preset-env"], // Compilador
+  "plugins": ["@babel/plugin-transform-runtime"] // Produccion "dist"
+}

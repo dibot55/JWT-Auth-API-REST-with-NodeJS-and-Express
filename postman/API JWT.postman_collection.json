@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "2a9240f6-0e34-48e3-9861-cb9ab2fc1f9a",
+		"name": "API JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26216567"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "GET products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test 3\",\r\n    \"category\": \"test\",\r\n    \"price\": 998.99,\r\n    \"imgURL\": \"https://imgs.search.brave.com/Ser0fUKZE-O1n-hDxu-hzb36N1VXlRrNyP-6vTOGsXU/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMDkvTm9kZV9s/b2dvX05vZGVKUy5w/bmc\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT products",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "role",
+			"item": []
+		},
+		{
+			"name": "user",
+			"item": []
+		}
+	]
+}
