@@ -4,6 +4,6 @@ import { config } from "dotenv";
 config();
 
 export default {
-  mongo_uri: process.env.MONGO_URI || "mongodb://127.0.0.1:27017/jwttest?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh",
+  mongo_uri: process.env.MONGO_URI || "mongodb://127.0.0.1:27017/jwttest?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.2",
   secret: process.env.SECRET || "products-api"
 }
