@@ -2,6 +2,7 @@
 import { ROLES } from "../models/role.models";
 import userSchema from "../models/user.models";
 
+// Revisar si el usuario existe
 export const checkUserExisted = async (req, res, next) => {
   try {
     // Encontar usuario existente
@@ -27,6 +28,7 @@ export const checkUserExisted = async (req, res, next) => {
 
 };
 
+// Revisar si los roles existen
 export const checkRolesExisted = async (req, res, next) => {
   
   // Validacion si el rol esta en la solicitud
