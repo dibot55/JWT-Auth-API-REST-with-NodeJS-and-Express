@@ -39,7 +39,7 @@ userSchema.statics.encryptPassword = async (password) => {
   return await bcrypt.hashSync(password, salt);
 };
 
-// Comparar los hashes de las contraseñas (password que da el usuario al iniciar sesión ,password almacenado)
+// Comparar los hashes de las contraseñas (password que da el usuario al iniciar sesión ,password almacenado en MongoDB)
 userSchema.statics.comparePassword = async (receivedpassword, Password) => {
   // Comparar contraseñas hasehadas
   return await bcrypt.compareSync(receivedpassword, Password);

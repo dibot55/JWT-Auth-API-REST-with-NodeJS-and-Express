@@ -1,6 +1,6 @@
-import { Router } from "express"; // Rutas
+import { Router } from "express"; // Rutas de Express
 import * as productsControllers from "../controllers/products.cotrollers"; // Controllers product
-import { authJwt } from "../middlewares"; // Verificacion con tokens - Automaticamente busca en el index.js
+import { authJwt } from "../middlewares"; // Autentificación con tokens
 
 const router = Router();
 
