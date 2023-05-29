@@ -39,7 +39,7 @@ export const checkRolesExisted = async (req, res, next) => {
 
       if(!ROLES.includes(req.body.roles[i])){
         return res.status(400).json({
-          message: `EL rol ${req.body.roles[i]} no existe`
+          message: `El rol ${req.body.roles[i]} no existe`
         });
       };
 

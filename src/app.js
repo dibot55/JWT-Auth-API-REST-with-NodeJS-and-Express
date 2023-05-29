@@ -1,5 +1,5 @@
 import express from "express"; // Express
-import morgan from "morgan"; // Visualiza las peticiones
+import morgan from "morgan"; // Visualizar las peticiones
 import cors from "cors"; // Cors
 import pkg from "../package.json"; // Para la desc, author, y version
 import { createRoles } from "./libs/initialSetup"; // Roles user, moderator y admin
@@ -13,11 +13,11 @@ createRoles(); // Ejecuta los roles de usuario desde que arranca el servidor
 // Pakage.json a express
 app.set('pkg', pkg);
 
-// Middleware
+// Middlewares
 app.use(morgan('dev')); // Para que se vean las peticiones en consola
 app.use(express.json()); // Para que entienda los objetos JSON 
 
-// Raiz
+// Ruta Raiz - Principal
 app.get('/', (req, res) => {
   res.json({
     name: app.get('pkg').name,

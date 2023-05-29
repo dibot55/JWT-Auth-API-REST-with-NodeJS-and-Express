@@ -21,7 +21,7 @@ export const createRoles = async () => {
 
   console.log(values);
   } catch (error) {
-    console.error(error);
+    console.error(`Ha ocurrido un error al crear los roles. Revisa tu conexion a MongoDB ${error}`);
   }
 }
 
