@@ -7,9 +7,7 @@ export const createRoles = async () => {
   try {
     
     // Cuenta si ya existen documentos
-    const count = await role.estimatedDocumentCount({
-      maxTimeMS: 20000 // Por la tardanza de Mongo Atlas
-    });
+    const count = await role.estimatedDocumentCount();
 
     // Validación si hay roles entonces bloquea el codigo siguiente retornando
     if(count > 0) return;
